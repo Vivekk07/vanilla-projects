@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Shizuru&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Shizuru", cursive;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  margin: 0;
+  background: #4e54c8;
+  background: -webkit-linear-gradient(to right, #8f94fb, #4e54c8);
+  background: linear-gradient(to right, #8f94fb, #4e54c8);
+}
+
+.search {
+  position: relative;
+}
+
+.search .input {
+  /* width: 100%; */
+  background-color: #fff;
+  border: none;
+  font-size: 2rem;
+  height: 5rem;
+  width: 5rem;
+  transition: width 0.3s ease;
+  border-radius: 20px;
+  padding: 2rem;
+}
+
+.search .input:focus {
+  outline: none;
+}
+
+.btn {
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 2rem;
+  position: absolute;
+  height: 5rem;
+  width: 5rem;
+  top: 0;
+  left: 0;
+  transition: transform 0.3s ease;
+
+  border-radius: 20px;
+}
+
+.search.active .input {
+  width: 35rem;
+  border-radius: 20px 0 0 20px;
+}
+
+.search.active .btn {
+  border-radius: 0 20px 20px 0;
+  transform: translateX(35rem);
+}
