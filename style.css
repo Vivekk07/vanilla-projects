@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Courgette&family=Russo+One&display=swap");
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 10rem;
+  background: #d4f4dd;
+}
+
+h1 {
+  font-family: "Russo One", sans-serif;
+  font-weight: normal;
+  color: #d62246;
+}
+
+.container {
+  font-family: "Courgette", cursive;
+  margin-top: 5rem;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  /* border: 1px solid; */
+  width: 60vw;
+}
+
+.container a {
+  margin: 1.5rem 1rem;
+  padding: 1rem;
+  font-size: 1.4em;
+  /* border: 1px solid rgb(221, 221, 221); */
+  text-decoration: none;
+  color: rgb(26, 26, 26);
+  height: 1rem;
+  transition: 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container a:hover {
+  border: none;
+  color: rgb(0, 0, 0);
+  background-color: #d62246;
+}

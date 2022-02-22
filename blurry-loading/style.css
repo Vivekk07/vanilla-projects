@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Anton", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+.bg {
+  background: url("https://images.unsplash.com/photo-1486673748761-a8d18475c757");
+  position: absolute;
+  top: -5rem;
+  left: -5rem;
+  width: calc(100vw + 10rem);
+  height: calc(100vh + 10rem);
+  z-index: -1;
+  filter: blur();
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.loading-text {
+  font-size: 3rem;
+  color: #a35707;
+}
