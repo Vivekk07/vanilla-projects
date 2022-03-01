@@ -1,34 +1,61 @@
 @import url("https://fonts.googleapis.com/css2?family=Courgette&family=Russo+One&display=swap");
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding-top: 10rem;
-  background: #d4f4dd;
+  padding-top: 5rem;
+  height: 100vh;
+  overflow-y: hidden;
+  background-image: url("https://images.unsplash.com/photo-1554147090-e1221a04a025?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2048&q=80");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  margin: 0;
 }
 
 h1 {
   font-family: "Russo One", sans-serif;
   font-weight: normal;
-  color: #d62246;
+  color: #f04e6f;
+}
+
+.annotation {
+  position: absolute;
+  top: -1rem;
+  left: 0;
+}
+
+.logo {
+  height: 4.5rem;
+  cursor: pointer;
 }
 
 .container {
   font-family: "Courgette", cursive;
-  margin-top: 5rem;
+  padding: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 7rem;
+  height: 100%;
   display: grid;
   grid-template-columns: auto auto auto;
-  /* border: 1px solid; */
-  width: 60vw;
+  min-width: 70vw;
+  overflow-y: scroll;
+  box-shadow: 0px 0px 10px 1px rgb(78, 78, 78);
+  border-radius: 5px;
+  background-color: rgba(231, 231, 231, 0.39);
 }
 
 .container a {
-  margin: 1.5rem 1rem;
-  padding: 1rem;
+  margin: 1rem;
+  padding: 2rem 1rem;
   font-size: 1.4em;
-  /* border: 1px solid rgb(221, 221, 221); */
   text-decoration: none;
   color: rgb(26, 26, 26);
   height: 1rem;
@@ -36,10 +63,25 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: center;
+  border: 1px solid rgb(153, 153, 153);
+  border-radius: 5px;
 }
 
 .container a:hover {
   border: none;
   color: rgb(0, 0, 0);
   background-color: #d62246;
+}
+
+*::-webkit-scrollbar {
+  width: 5px;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: rgba(41, 41, 41, 0.205);
+  border-radius: 25px;
 }

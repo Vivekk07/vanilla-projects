@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Domine&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("https://images.unsplash.com/photo-1554034483-04fda0d3507b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80");
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0;
+  font-family: "Domine", serif;
+}
+
+h3 {
+  margin: 10px 0 20px;
+  letter-spacing: 1px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+.container {
+  width: 40rem;
+}
+
+textarea {
+  background: rgb(228, 228, 228);
+  border: none;
+  width: 100%;
+  display: block;
+  height: 8rem;
+  font-size: 1.4rem;
+  transition: 0.1s ease;
+  margin: 0 0 1rem;
+}
+
+textarea:focus {
+  outline: none;
+  box-shadow: 0px 0px 4px 3px rgba(0, 0, 0, 0.75);
+}
+
+.tag {
+  background: linear-gradient(to right, #7f7fd5, #8866e7, #8568e4);
+  color: white;
+  border-radius: 50px;
+  padding: 0.2rem 1rem;
+  margin: 0 1rem 0 0;
+  font-size: 1rem;
+  display: inline-flex;
+}
+
+.tag.highlight {
+  background: linear-gradient(to right, #4b4b80, #473579, #392c64);
+}
