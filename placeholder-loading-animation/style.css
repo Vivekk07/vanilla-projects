@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Shippori+Antique+B1&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Shippori Antique B1", sans-serif;
+  background: #d0cddf;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+img {
+  max-width: 100%;
+}
+
+.card {
+  box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.75);
+  border-radius: 5px;
+  overflow: hidden;
+  width: 25rem;
+}
+
+.header {
+  height: 12.5rem;
+}
+
+.header img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.content {
+  background-color: #fff;
+  padding: 30px;
+}
+
+.title {
+  margin: 0;
+}
+
+.excerpt {
+  color: #474747;
+  margin: 0.5rem 0 2rem;
+}
+
+.author {
+  display: flex;
+}
+
+.profile-img {
+  overflow: hidden;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-left: 10px;
+  width: 200px;
+}
+
+.info small {
+  color: #aaaaaa;
+  margin-top: 5px;
+}
+
+.bg {
+  background-image: linear-gradient(
+    to right,
+    #fdfdfd 0%,
+    #dddddd 10%,
+    #e7e7e7 20%,
+    #fdfdfd 100%
+  );
+  background-size: 200% 100%;
+  animation: bgPos 1s linear infinite;
+}
+
+.bg-text {
+  border-radius: 50px;
+  display: inline-block;
+  margin: 0;
+  height: 10px;
+  width: 100%;
+}
+
+@keyframes bgPos {
+  0% {
+    background-position: 50% 0;
+  }
+
+  100% {
+    background-position: -150% 0;
+  }
+}
